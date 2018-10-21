@@ -2,20 +2,19 @@ require 'spec_helper'
 
 describe String do
 
-  it 'uglify converts spaces to underscores' do
+  it 'does nothings' do
+    result = 'these_are_some_spaces'.uglify
+    expect(result).to eq('these_are_some_spaces')
+  end
+
+  it 'converts spaces to underscores' do
     result = 'these are spaces'.uglify
     expect(result).to eq('these_are_spaces')
   end
 
-  it 'uglify converts uppercase to lowercase and spaces to underscores' do
+  it 'converts uppercase to lowercase and spaces to underscores' do
     result = 'THESE aRE spAces'.uglify
     expect(result).to eq('these_are_spaces')
-  end
-
-  it 'returns string money method formats money' do
-    skip 'Requires jeweler-utils to be published to rubygems'
-    input = 50.45
-    expect(input.money).to eq('$50.45')
   end
 
   it 'returns string to_b converts explicit boolean strings correctly' do

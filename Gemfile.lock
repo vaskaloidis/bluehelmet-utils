@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bluehelmet-utils (0.1.0)
+    bluehelmet-utils (0.1.2)
       actionview
       activesupport
 

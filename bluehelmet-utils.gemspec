@@ -1,11 +1,11 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "bluehelmet/utils/version"
+require "bluehelmet/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "bluehelmet-utils"
-  spec.version       = Bluehelmet::Utils::VERSION
+  spec.version       = Bluehelmet::VERSION
   spec.authors       = ["vaskaloidis"]
   spec.email         = ["vas.kaloidis@gmail.com"]
 
@@ -17,8 +17,6 @@ Gem::Specification.new do |spec|
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-
     spec.metadata["homepage_uri"] = spec.homepage
     spec.metadata["source_code_uri"] = "http://www.github.com/vaskaloidis/bluehelmet-utils"
   else
