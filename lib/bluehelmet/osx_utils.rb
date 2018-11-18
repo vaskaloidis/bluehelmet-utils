@@ -8,8 +8,17 @@ module Bluehelmet
     end
 
     def self.osx?
-
+      OS.mac?
     end
+
+    def self.linux?
+      OS.linux?
+    end
+
+    def self.windows?
+      OS.windows?
+    end
+
 
   end
 end
