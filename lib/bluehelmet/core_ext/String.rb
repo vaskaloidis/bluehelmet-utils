@@ -33,5 +33,14 @@ class String
     self.gsub(' ', '_').downcase
   end
 
+  # Adds a space to the back of the a String ONLY if it's empty.
+  # This is used in command-line ops to prevent double-spaces
+  # when a flag variable is empty. (Code ends up much cleaner)
+  class String
+    def spacer
+      self + ' ' if self == ''
+    end
+  end
+
 
 end
